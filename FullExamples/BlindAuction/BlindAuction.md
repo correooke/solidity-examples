@@ -1,0 +1,8 @@
+Subasta a ciegas
+La subasta abierta anterior se extiende a una subasta a ciegas en lo siguiente. La ventaja de una subasta a ciegas es que no hay presión de tiempo hacia el final del período de licitación. Crear una subasta a ciegas en una plataforma informática transparente puede parecer una contradicción, pero la criptografía viene al rescate.
+
+Durante el período de licitación , un postor no envía su oferta, sino solo una versión hash de la misma. Dado que actualmente se considera prácticamente imposible encontrar dos valores (suficientemente largos) cuyos valores hash sean iguales, el postor se compromete con la oferta por eso. Una vez finalizado el período de licitación, los postores deben revelar sus ofertas: envían sus valores sin cifrar y el contrato verifica que el valor hash sea el mismo que el proporcionado durante el período de licitación.
+
+Otro desafío es cómo hacer que la subasta sea vinculante y ciega al mismo tiempo: la única forma de evitar que el postor no envíe el dinero después de haber ganado la subasta es hacer que lo envíe junto con la oferta. Dado que las transferencias de valor no se pueden cegar en Ethereum, cualquiera puede ver el valor.
+
+El siguiente contrato resuelve este problema al aceptar cualquier valor que sea mayor que la oferta más alta. Dado que, por supuesto, esto solo se puede verificar durante la fase de revelación, algunas ofertas pueden no ser válidas , y esto es a propósito (incluso proporciona una marca explícita para colocar ofertas inválidas con transferencias de alto valor): los licitadores pueden confundir a la competencia al colocar varias ofertas altas o ofertas bajas no válidas.

@@ -1,0 +1,2 @@
+Subasta abierta simple
+La idea general del siguiente contrato de subasta simple es que todos pueden enviar sus ofertas durante un período de licitación. Las ofertas ya incluyen el envío de dinero / Ether para vincular a los postores a su oferta. Si se aumenta la oferta más alta, el postor anteriormente más alto recupera su dinero. Una vez finalizado el período de licitación, el contrato debe llamarse manualmente para que el beneficiario reciba su dinero; los contratos no pueden activarse por sí mismos.

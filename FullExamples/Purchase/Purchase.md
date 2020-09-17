@@ -1,0 +1,6 @@
+Compra remota segura
+La compra de productos de forma remota actualmente requiere que varias partes confíen entre sí. La configuración más simple involucra a un vendedor y un comprador. El comprador desea recibir un artículo del vendedor y el vendedor desea recibir dinero (o un equivalente) a cambio. La parte problemática es el envío aquí: no hay forma de determinar con certeza que el artículo llegó al comprador.
+
+Hay varias formas de resolver este problema, pero todas se quedan cortas de una manera u otra. En el siguiente ejemplo, ambas partes tienen que poner el doble del valor del artículo en el contrato como depósito en garantía. Tan pronto como esto suceda, el dinero permanecerá bloqueado dentro del contrato hasta que el comprador confirme que recibió el artículo. Después de eso, al comprador se le devuelve el valor (la mitad de su depósito) y el vendedor recibe tres veces el valor (su depósito más el valor). La idea detrás de esto es que ambas partes tienen un incentivo para resolver la situación o, de lo contrario, su dinero está bloqueado para siempre.
+
+Este contrato, por supuesto, no resuelve el problema, pero ofrece una descripción general de cómo se pueden utilizar construcciones similares a máquinas de estado dentro de un contrato.
